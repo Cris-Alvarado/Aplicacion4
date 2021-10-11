@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Aplicacion4</string>
+    <string name="grabadora">Grabadora</string>
+    <string name="modo_aurclr">Modo auricular</string>
+    <string name="modo_aurclr_desc">Reproducir audio con el altavoz del audifono</string>
+    <string name="notificaciones">Notificaciones en la pantalla de bloqueo</string>
+    <string name="notificaciones_desc">Muestra un indicador azul en la pantalla de bloqueo y parpadea la luz LED durante la grabación</string>
+    <string name="indicador">Indicador de la Pantalla de inicio</string>
+    <string name="indicador_desc">Muestra un indicador azul en la pantalla de inicio durante la grabación</string>
+    <string name="silenciar">Silenciar el tono de llamada mientras se graba</string>
+    <string name="nomb_grabacion">Nombrar grabaciones manualmente</string>
+    <string name="formato">Formato de grabación</string>
+    <string name="calidad">Calidad de grabaciión</string>
+    <string name="eliminar">Eliminar grabaciones sincronizadas</string>
+</resources>

@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/grabadora"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/grabadora"
+        android:textColor="@color/black"
+        android:layout_marginBottom="20dp"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/grabadora"
+        android:layout_toLeftOf="@id/switch1"
+        android:text="@string/modo_aurclr"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@id/textView"
+        android:layout_toLeftOf="@id/switch1"
+        android:text="@string/modo_aurclr_desc" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/textView"
+        android:layout_alignBottom="@id/textView2"
+        android:layout_alignRight="@id/grabadora"
+        android:layout_below="@id/grabadora"
+         />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView2"
+        android:layout_toLeftOf="@id/switch2"
+        android:text="@string/notificaciones"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" /> />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@id/textView3"
+        android:layout_toLeftOf="@id/switch2"
+        android:text="@string/notificaciones_desc" />
+
+    <Switch
+        android:id="@+id/switch2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/textView3"
+        android:layout_alignBottom="@id/textView4"
+        android:layout_alignRight="@id/grabadora"
+        android:layout_below="@id/grabadora" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView4"
+        android:layout_toLeftOf="@id/switch3"
+        android:text="@string/indicador"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@id/textView5"
+        android:layout_toLeftOf="@id/switch3"
+        android:text="@string/indicador_desc" />
+
+    <Switch
+        android:id="@+id/switch3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/textView5"
+        android:layout_alignBottom="@id/textView6"
+        android:layout_alignRight="@id/grabadora"
+        android:layout_below="@id/grabadora" />
+
+    <TextView
+        android:id="@+id/silenciar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView6"
+        android:layout_toLeftOf="@id/switchSilen"
+        android:text="@string/silenciar"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:layout_marginBottom="20dp"
+        android:textStyle="bold" />
+
+    <Switch
+        android:id="@+id/switchSilen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/silenciar"
+        android:layout_alignBottom="@id/silenciar"
+        android:layout_alignRight="@id/grabadora"
+        android:layout_below="@id/grabadora" />
+
+    <TextView
+        android:id="@+id/nombrarG"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/silenciar"
+        android:layout_toLeftOf="@id/switchNomG"
+        android:text="@string/nomb_grabacion"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:layout_marginBottom="20dp"
+        android:textStyle="bold" />
+
+
+    <Switch
+        android:id="@+id/switchNomG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/nombrarG"
+        android:layout_alignBottom="@id/nombrarG"
+        android:layout_alignRight="@id/grabadora"
+        android:layout_below="@id/grabadora" />
+
+    <TextView
+        android:id="@+id/formatoG"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nombrarG"
+        android:layout_toLeftOf="@id/formTipo"
+        android:text="@string/formato"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:layout_marginBottom="20dp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/formTipo"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/grabadora"
+        android:layout_alignTop="@id/formatoG"
+        android:layout_alignRight="@id/grabadora"
+        android:layout_alignBottom="@id/formatoG"
+        android:textSize="15dp"
+        android:text="MP3" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/grabadora"
+        android:layout_alignTop="@id/formatoG"
+        android:layout_alignRight="@id/grabadora"
+        android:layout_alignBottom="@id/formatoG"
+        />
+
+    <TextView
+        android:id="@+id/calidadG"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/formatoG"
+        android:layout_toLeftOf="@id/calidadTipo"
+        android:text="@string/calidad"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:layout_marginBottom="20dp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/calidadTipo"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/grabadora"
+        android:layout_alignTop="@id/calidadG"
+        android:layout_alignRight="@id/grabadora"
+        android:layout_alignBottom="@id/calidadG"
+        android:textSize="15dp"
+        android:text="Estándar" />
+    <Spinner
+        android:id="@+id/spinnerCalid"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/grabadora"
+        android:layout_alignTop="@id/calidadG"
+        android:layout_alignRight="@id/grabadora"
+        android:layout_alignBottom="@id/calidadG"
+        android:text="MP3" />
+
+
+    <TextView
+        android:id="@+id/eliminar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/calidadG"
+        android:layout_toLeftOf="@id/eliminar"
+        android:layout_marginBottom="20dp"
+        android:text="@string/eliminar"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/spinnerElim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/grabadora"
+        android:layout_alignTop="@id/eliminar"
+        android:layout_alignRight="@id/grabadora"
+        android:layout_alignBottom="@id/eliminar"
+         />
+
+
+</RelativeLayout>
